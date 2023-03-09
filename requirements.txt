@@ -1,0 +1,7 @@
+requests
+pillow
+pycryptodome
+psutil
+wmi
+discord
+pypiwin32
