@@ -115,10 +115,6 @@ test_button = tk.Button(button_frame,
                         command=test_webhook)
 
 
-def star_repo():
-    os.system("python source/star.py")
-
-
 star_button = tk.Button(button_frame,
                         text="Star Our Repo",
                         font=("Arial", 14),
